@@ -1,0 +1,13 @@
+{
+  "name": "tesla-key-host",
+  "version": "1.0.0",
+  "description": "Simple static site to host Tesla Fleet API public key",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site - no start needed'"
+  },
+  "keywords": ["tesla", "fleet-api", "public-key"],
+  "author": "Energy Monitor App",
+  "license": "MIT"
+}
