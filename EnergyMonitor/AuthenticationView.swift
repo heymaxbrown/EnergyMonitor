@@ -60,11 +60,13 @@ struct AuthenticationView: View {
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.center)
                     
-                    Button("Sign in with Tesla") {
-                        authService.startAuthentication()
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .controlSize(.large)
+                       Button("Sign in with Tesla") {
+                           Task {
+                               await authService.authenticateWithPartnerToken()
+                           }
+                       }
+                       .buttonStyle(.borderedProminent)
+                       .controlSize(.large)
                     
                     Button("Change API Credentials") {
                         showingClientIdInput = true
@@ -113,7 +115,7 @@ struct AuthenticationView: View {
             }
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("How to get your API credentials:")
+                Text("How to get your Tesla Fleet API credentials:")
                     .font(.caption)
                     .fontWeight(.semibold)
                 
@@ -123,9 +125,15 @@ struct AuthenticationView: View {
                 Text("2. Create an application")
                     .font(.caption)
                     .foregroundColor(.secondary)
-                Text("3. Copy your Client ID and Client Secret")
+                Text("3. Enable the Fleet API for your app")
                     .font(.caption)
                     .foregroundColor(.secondary)
+                Text("4. Copy your Client ID and Client Secret")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                Text("5. Your app is already registered with Tesla Fleet API")
+                    .font(.caption)
+                    .foregroundColor(.green)
             }
             .padding(.top, 8)
         }

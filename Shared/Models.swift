@@ -53,6 +53,18 @@ public struct TeslaTokenResponse: Codable {
     }
 }
 
+public struct TeslaPartnerTokenResponse: Codable {
+    public let accessToken: String
+    public let expiresIn: Int
+    public let tokenType: String
+    
+    enum CodingKeys: String, CodingKey {
+        case accessToken = "access_token"
+        case expiresIn = "expires_in"
+        case tokenType = "token_type"
+    }
+}
+
 public struct TeslaUserInfo: Codable {
     public let sub: String
     public let email: String?
@@ -64,6 +76,25 @@ public struct TeslaUserInfo: Codable {
         case email
         case givenName = "given_name"
         case familyName = "family_name"
+    }
+}
+
+// Fleet API specific user info response structure
+public struct TeslaFleetUserInfoResponse: Codable {
+    public let response: TeslaFleetUserInfo
+}
+
+public struct TeslaFleetUserInfo: Codable {
+    public let email: String
+    public let fullName: String
+    public let profileImageUrl: String?
+    public let vaultUuid: String
+    
+    enum CodingKeys: String, CodingKey {
+        case email
+        case fullName = "full_name"
+        case profileImageUrl = "profile_image_url"
+        case vaultUuid = "vault_uuid"
     }
 }
 
@@ -106,15 +137,15 @@ public struct TeslaEnergySite: Codable, Identifiable {
     public let energySiteId: Int
     public let resourceType: String
     public let siteName: String
-    public let idS: String
-    public let energyLeft: Double
-    public let totalPackEnergy: Double
-    public let percentageCharged: Double
-    public let batteryType: String
-    public let backupCapable: Bool
-    public let batteryPower: Double
-    public let syncGridAlertEnabled: Bool
-    public let breakerAlertEnabled: Bool
+    public let idS: String?
+    public let energyLeft: Double?
+    public let totalPackEnergy: Double?
+    public let percentageCharged: Double?
+    public let batteryType: String?
+    public let backupCapable: Bool?
+    public let batteryPower: Double?
+    public let syncGridAlertEnabled: Bool?
+    public let breakerAlertEnabled: Bool?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -140,4 +171,24 @@ public enum TeslaAuthState {
     case authenticating
     case authenticated(TeslaUserInfo)
     case error(String)
+}
+
+public enum TeslaAuthError: Error, LocalizedError {
+    case networkError(String)
+    case authenticationFailed(String)
+    case invalidResponse
+    case tokenExpired
+    
+    public var errorDescription: String? {
+        switch self {
+        case .networkError(let message):
+            return "Network error: \(message)"
+        case .authenticationFailed(let message):
+            return "Authentication failed: \(message)"
+        case .invalidResponse:
+            return "Invalid response from server"
+        case .tokenExpired:
+            return "Token has expired"
+        }
+    }
 }

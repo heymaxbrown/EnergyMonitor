@@ -23,6 +23,12 @@ struct MenuContentView: View {
                             .font(.caption)
                             .foregroundColor(.secondary)
                     }
+                    Spacer()
+                    Button("Logout") {
+                        authService.logout()
+                    }
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
                 case .authenticating:
                     HStack(spacing: 6) {
                         ProgressView()
@@ -115,8 +121,12 @@ struct MenuContentView: View {
             .frame(height: 140)
 
             HStack {
-                Text("Updated \(Date().formatted(date: .omitted, time: .standard))")
-                    .font(.caption).foregroundStyle(.secondary)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Updated \(authService.lastRefreshTime.formatted(date: .omitted, time: .standard))")
+                        .font(.caption).foregroundStyle(.secondary)
+                    Text("Next refresh in \(authService.nextRefreshIn)s")
+                        .font(.caption2).foregroundStyle(.tertiary)
+                }
                 Spacer()
                 Button("Open Dashboard") { NSApp.activate(ignoringOtherApps: true) }
             }
