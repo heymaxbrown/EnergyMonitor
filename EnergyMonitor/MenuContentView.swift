@@ -96,14 +96,130 @@ struct MenuContentView: View {
     
     private var authenticatedContentView: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 16) {
-                BatteryRing(percent: samples.last?.soc ?? 0, state: batteryStateText)
-                VStack(alignment: .leading) {
+            // Real-time Status Display (prominent at top)
+            if let display = authService.currentMenuBarDisplay {
+                VStack(alignment: .leading, spacing: 6) {
+                    // Main power display
                     HStack {
+                        Text("⚡")
+                            .font(.title2)
+                        Text(String(format: "%.1f kW", display.homeLoad / 1000.0))
+                            .font(.title2)
+                            .fontWeight(.bold)
+                        
+                        // Status indicators
+                        HStack(spacing: 4) {
+                            ForEach(display.statusIndicators, id: \.type) { indicator in
+                                switch indicator.type {
+                                case .solar: Text("☀️").font(.caption)
+                                case .batteryCharging: Text("🔋▼").font(.caption)
+                                case .batteryDischarging: Text("🔋▲").font(.caption)
+                                case .gridImport: Text("⇅▲").font(.caption)
+                                case .gridExport: Text("⇅▼").font(.caption)
+                                }
+                            }
+                        }
+                        
+                        Spacer()
+                        
+                        // Color status dot
+                        Circle()
+                            .fill(display.colorState == .exporting ? .green : 
+                                  display.colorState == .importing ? .orange : .secondary)
+                            .frame(width: 8, height: 8)
+                    }
+                    
+                    // Tooltip-style summary
+                    Text(display.tooltipText)
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                        .lineLimit(2)
+                }
+                .padding(.vertical, 8)
+                .padding(.horizontal, 12)
+                .background(Color.secondary.opacity(0.1))
+                .cornerRadius(8)
+            }
+            
+            // Enhanced Energy Display
+            if authService.currentMenuBarDisplay != nil {
+                VStack(alignment: .leading, spacing: 8) {
+                    // At-a-glance cards
+                    HStack(spacing: 12) {
+                        // Battery Card
+                        if let batteryStatus = authService.currentBatteryStatus {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text("Battery")
+                                    .font(.caption2)
+                                    .foregroundColor(.secondary)
+                                Text("\(Int(batteryStatus.soc))%")
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                Text(batteryStatus.state.rawValue.capitalized)
+                                    .font(.caption2)
+                                    .foregroundColor(.secondary)
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(8)
+                            .background(Color.secondary.opacity(0.1))
+                            .cornerRadius(8)
+                        }
+                        
+                        // Flow Summary
+                        if let energyFlow = authService.currentEnergyFlow {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text("Flow")
+                                    .font(.caption2)
+                                    .foregroundColor(.secondary)
+                                
+                                if energyFlow.solarToHome > 0 {
+                                    HStack(spacing: 4) {
+                                        Text("☀️")
+                                        Text("→")
+                                        Text("🏠")
+                                        Text(String(format: "%.1f kW", energyFlow.solarToHome / 1000.0))
+                                            .font(.caption)
+                                    }
+                                }
+                                
+                                if energyFlow.solarToGrid > 0 {
+                                    HStack(spacing: 4) {
+                                        Text("☀️")
+                                        Text("→")
+                                        Text("🔌")
+                                        Text(String(format: "%.1f kW", energyFlow.solarToGrid / 1000.0))
+                                            .font(.caption)
+                                    }
+                                }
+                                
+                                if energyFlow.batteryToHome > 0 {
+                                    HStack(spacing: 4) {
+                                        Text("🔋")
+                                        Text("→")
+                                        Text("🏠")
+                                        Text(String(format: "%.1f kW", energyFlow.batteryToHome / 1000.0))
+                                            .font(.caption)
+                                    }
+                                }
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(8)
+                            .background(Color.secondary.opacity(0.1))
+                            .cornerRadius(8)
+                        }
+                    }
+                }
+                .padding(.vertical, 4)
+            }
+            
+            HStack(spacing: 12) {
+                BatteryRing(percent: samples.last?.soc ?? 0, state: batteryStateText)
+                VStack(alignment: .leading, spacing: 8) {
+                    HStack(spacing: 12) {
                         StatRow(icon: "sun.max.fill", label: "Solar",  value: Fmt.wattString(samples.last?.solar ?? 0))
                         StatRow(icon: "house.fill",   label: "Home",   value: Fmt.wattString(samples.last?.home  ?? 0))
                     }
-                    HStack {
+                    HStack(spacing: 12) {
                         StatRow(icon: "bolt.horizontal.fill", label: "Grid",    value: Fmt.wattString(samples.last?.grid ?? 0))
                         StatRow(icon: "battery.100",          label: "Battery", value: Fmt.wattString(samples.last?.battery ?? 0))
                     }
@@ -189,11 +305,20 @@ struct MenuContentView: View {
 struct StatRow: View {
     let icon: String; let label: String; let value: String
     var body: some View {
-        HStack(spacing: 6) {
+        HStack(spacing: 4) {
             Image(systemName: icon)
-            Text(label + ":").foregroundStyle(.secondary)
-            Text(value).monospacedDigit()
-        }.font(.subheadline)
+                .frame(width: 16)
+            VStack(alignment: .leading, spacing: 1) {
+                Text(label + ":")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                Text(value)
+                    .font(.caption)
+                    .monospacedDigit()
+            }
+            Spacer()
+        }
+        .frame(minWidth: 80)
     }
 }
 
@@ -201,7 +326,7 @@ struct BatteryRing: View {
     let percent: Double
     let state: String
     var body: some View {
-        VStack {
+        VStack(spacing: 4) {
             ZStack {
                 Circle().stroke(lineWidth: 8).opacity(0.15)
                 Circle().trim(from: 0, to: CGFloat(max(0,min(1, percent/100))))
@@ -209,7 +334,11 @@ struct BatteryRing: View {
                     .rotationEffect(.degrees(-90))
                 Text("\(Int(percent))%").font(.headline).monospacedDigit()
             }.frame(width: 64, height: 64)
-            Text(state).font(.caption)
+            Text(state)
+                .font(.caption)
+                .lineLimit(2)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: 80)
         }
     }
 }

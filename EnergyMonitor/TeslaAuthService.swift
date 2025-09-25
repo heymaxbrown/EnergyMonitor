@@ -10,6 +10,9 @@ final class TeslaAuthService: NSObject, ObservableObject {
     @Published var energySites: [TeslaEnergySite] = []
     @Published var lastRefreshTime: Date = Date()
     @Published var nextRefreshIn: Int = 30 // seconds until next refresh
+    @Published var currentMenuBarDisplay: MenuBarDisplay?
+    @Published var currentBatteryStatus: BatteryStatus?
+    @Published var currentEnergyFlow: EnergyFlow?
     
     private var config: TeslaAuthConfig
     private var refreshTimer: Timer?
@@ -546,12 +549,24 @@ final class TeslaAuthService: NSObject, ObservableObject {
                     )
                     
                     PowerCache.append(liveStatus)
+                    
+                    // Generate enhanced display data
+                    self.currentMenuBarDisplay = MenuBarDisplay(from: liveStatus)
+                    self.currentBatteryStatus = BatteryStatus(soc: liveData.percentageCharged ?? 0, power: liveData.batteryPower ?? 0)
+                    self.currentEnergyFlow = EnergyFlow(
+                        solarPower: liveData.solarPower ?? 0,
+                        loadPower: liveData.loadPower ?? 0,
+                        gridPower: gridPower,
+                        batteryPower: liveData.batteryPower ?? 0
+                    )
+                    
                     print("DEBUG: Added live energy data to PowerCache:")
                     print("  - Solar: \(liveData.solarPower ?? 0)W")
                     print("  - Home: \(liveData.loadPower ?? 0)W")
                     print("  - Grid: \(gridPower)W")
                     print("  - Battery: \(liveData.batteryPower ?? 0)W")
                     print("  - SoC: \(liveData.percentageCharged ?? 0)%")
+                    print("DEBUG: Generated menu bar display data")
                     
                 } catch {
                     print("DEBUG: Failed to parse live energy data: \(error)")
@@ -689,7 +704,7 @@ extension TeslaAuthService {
         print("DEBUG: Stopped auto-refresh timer")
     }
     
-    private func refreshEnergyData() async {
+    func refreshEnergyData() async {
         guard case .authenticated = authState else { return }
         
         print("DEBUG: Auto-refreshing energy data...")

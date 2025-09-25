@@ -15,6 +15,7 @@ struct EnergyMonitorApp: App {
         )
     }
     
+    
     init() {
         // Initialize auth service with stored credentials or default
         let clientId = SecureTokenStore.shared.clientId ?? ""
@@ -25,6 +26,7 @@ struct EnergyMonitorApp: App {
     }
 
     var body: some Scene {
+        // Main menu bar with rich content
         MenuBarExtra("Energy", systemImage: "bolt.fill") {
             MenuContentView(
                 lastError: $lastError,
@@ -63,6 +65,7 @@ struct EnergyMonitorApp: App {
         .windowResizability(.contentSize)
     }
 
+    
     private func refresh() async {
         do {
             guard let siteID = SecureTokenStore.shared.siteID else { return }
