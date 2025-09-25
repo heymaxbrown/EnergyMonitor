@@ -1,0 +1,88 @@
+{
+  "source": "/Users/maxbrown/Documents/EnergyMonitor/EnergyMonitor/DashboardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Home Energy",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 11
+        }
+      },
+      {
+        "comment": "",
+        "key": "Time",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 13
+        }
+      },
+      {
+        "comment": "",
+        "key": "Solar",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 13
+        }
+      },
+      {
+        "comment": "",
+        "key": "Time",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "Home",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "Time",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Battery",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Zero",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "Time",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "Grid",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 18
+        }
+      }
+    ]
+  },
+  "version": 1
+}

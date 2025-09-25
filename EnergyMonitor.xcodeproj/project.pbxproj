@@ -6,14 +6,78 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3072C16C2E84AA6B00ADBDAD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072C16B2E84AA6B00ADBDAD /* WidgetKit.framework */; };
+		3072C16E2E84AA6B00ADBDAD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072C16D2E84AA6B00ADBDAD /* SwiftUI.framework */; };
+		3072C17F2E84AA6C00ADBDAD /* EnergyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3072C1692E84AA6B00ADBDAD /* EnergyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3072C1852E84AA8900ADBDAD /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072C1642E84A85300ADBDAD /* Formatting.swift */; };
+		3072C1862E84AA8900ADBDAD /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072C1612E84A7AF00ADBDAD /* AppGroup.swift */; };
+		3072C1872E84AA8900ADBDAD /* PowerCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072C1632E84A7FB00ADBDAD /* PowerCache.swift */; };
+		3072C1882E84AA8900ADBDAD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072C1622E84A7DC00ADBDAD /* Models.swift */; };
+		3072C1892E84AA8900ADBDAD /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072C1612E84A7AF00ADBDAD /* AppGroup.swift */; };
+		3072C18A2E84AA8900ADBDAD /* PowerCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072C1632E84A7FB00ADBDAD /* PowerCache.swift */; };
+		3072C18B2E84AA8900ADBDAD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072C1622E84A7DC00ADBDAD /* Models.swift */; };
+		3072C18C2E84AA8900ADBDAD /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072C1642E84A85300ADBDAD /* Formatting.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3072C17D2E84AA6C00ADBDAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3072C1492E84A67700ADBDAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3072C1682E84AA6B00ADBDAD;
+			remoteInfo = EnergyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3072C1842E84AA6C00ADBDAD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3072C17F2E84AA6C00ADBDAD /* EnergyWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3072C1512E84A67700ADBDAD /* EnergyMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3072C1612E84A7AF00ADBDAD /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		3072C1622E84A7DC00ADBDAD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3072C1632E84A7FB00ADBDAD /* PowerCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerCache.swift; sourceTree = "<group>"; };
+		3072C1642E84A85300ADBDAD /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		3072C1692E84AA6B00ADBDAD /* EnergyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EnergyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3072C16B2E84AA6B00ADBDAD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3072C16D2E84AA6B00ADBDAD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3072C1992E84AC0300ADBDAD /* EnergyWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EnergyWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3072C1802E84AA6C00ADBDAD /* Exceptions for "EnergyWidget" folder in "EnergyWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3072C1682E84AA6B00ADBDAD /* EnergyWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3072C1532E84A67700ADBDAD /* EnergyMonitor */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = EnergyMonitor;
+			sourceTree = "<group>";
+		};
+		3072C16F2E84AA6B00ADBDAD /* EnergyWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3072C1802E84AA6C00ADBDAD /* Exceptions for "EnergyWidget" folder in "EnergyWidgetExtension" target */,
+			);
+			path = EnergyWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +90,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3072C1662E84AA6B00ADBDAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3072C16E2E84AA6B00ADBDAD /* SwiftUI.framework in Frameworks */,
+				3072C16C2E84AA6B00ADBDAD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3072C1482E84A67700ADBDAD = {
 			isa = PBXGroup;
 			children = (
+				3072C1992E84AC0300ADBDAD /* EnergyWidgetExtension.entitlements */,
+				3072C1602E84A79F00ADBDAD /* Shared */,
 				3072C1532E84A67700ADBDAD /* EnergyMonitor */,
+				3072C16F2E84AA6B00ADBDAD /* EnergyWidget */,
+				3072C16A2E84AA6B00ADBDAD /* Frameworks */,
 				3072C1522E84A67700ADBDAD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +118,29 @@
 			isa = PBXGroup;
 			children = (
 				3072C1512E84A67700ADBDAD /* EnergyMonitor.app */,
+				3072C1692E84AA6B00ADBDAD /* EnergyWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3072C1602E84A79F00ADBDAD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3072C1642E84A85300ADBDAD /* Formatting.swift */,
+				3072C1632E84A7FB00ADBDAD /* PowerCache.swift */,
+				3072C1622E84A7DC00ADBDAD /* Models.swift */,
+				3072C1612E84A7AF00ADBDAD /* AppGroup.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3072C16A2E84AA6B00ADBDAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3072C16B2E84AA6B00ADBDAD /* WidgetKit.framework */,
+				3072C16D2E84AA6B00ADBDAD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +153,12 @@
 				3072C14D2E84A67700ADBDAD /* Sources */,
 				3072C14E2E84A67700ADBDAD /* Frameworks */,
 				3072C14F2E84A67700ADBDAD /* Resources */,
+				3072C1842E84AA6C00ADBDAD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3072C17E2E84AA6C00ADBDAD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				3072C1532E84A67700ADBDAD /* EnergyMonitor */,
@@ -69,6 +169,28 @@
 			productName = EnergyMonitor;
 			productReference = 3072C1512E84A67700ADBDAD /* EnergyMonitor.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3072C1682E84AA6B00ADBDAD /* EnergyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3072C1812E84AA6C00ADBDAD /* Build configuration list for PBXNativeTarget "EnergyWidgetExtension" */;
+			buildPhases = (
+				3072C1652E84AA6B00ADBDAD /* Sources */,
+				3072C1662E84AA6B00ADBDAD /* Frameworks */,
+				3072C1672E84AA6B00ADBDAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3072C16F2E84AA6B00ADBDAD /* EnergyWidget */,
+			);
+			name = EnergyWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = EnergyWidgetExtension;
+			productReference = 3072C1692E84AA6B00ADBDAD /* EnergyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +203,9 @@
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					3072C1502E84A67700ADBDAD = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					3072C1682E84AA6B00ADBDAD = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
@@ -100,12 +225,20 @@
 			projectRoot = "";
 			targets = (
 				3072C1502E84A67700ADBDAD /* EnergyMonitor */,
+				3072C1682E84AA6B00ADBDAD /* EnergyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3072C14F2E84A67700ADBDAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3072C1672E84AA6B00ADBDAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,10 +252,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3072C1852E84AA8900ADBDAD /* Formatting.swift in Sources */,
+				3072C1862E84AA8900ADBDAD /* AppGroup.swift in Sources */,
+				3072C1872E84AA8900ADBDAD /* PowerCache.swift in Sources */,
+				3072C1882E84AA8900ADBDAD /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3072C1652E84AA6B00ADBDAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3072C1892E84AA8900ADBDAD /* AppGroup.swift in Sources */,
+				3072C18A2E84AA8900ADBDAD /* PowerCache.swift in Sources */,
+				3072C18B2E84AA8900ADBDAD /* Models.swift in Sources */,
+				3072C18C2E84AA8900ADBDAD /* Formatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3072C17E2E84AA6C00ADBDAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3072C1682E84AA6B00ADBDAD /* EnergyWidgetExtension */;
+			targetProxy = 3072C17D2E84AA6C00ADBDAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3072C15A2E84A67800ADBDAD /* Debug */ = {
@@ -249,8 +405,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EnergyMonitor/EnergyMonitor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F4QP498ZZW;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -262,10 +423,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = treasures.EnergyMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -280,8 +445,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EnergyMonitor/EnergyMonitor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F4QP498ZZW;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -293,12 +463,92 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = treasures.EnergyMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3072C1822E84AA6C00ADBDAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = EnergyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F4QP498ZZW;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EnergyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EnergyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = treasures.EnergyMonitor.EnergyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3072C1832E84AA6C00ADBDAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = EnergyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F4QP498ZZW;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EnergyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EnergyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = treasures.EnergyMonitor.EnergyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,6 +573,15 @@
 			buildConfigurations = (
 				3072C15D2E84A67800ADBDAD /* Debug */,
 				3072C15E2E84A67800ADBDAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3072C1812E84AA6C00ADBDAD /* Build configuration list for PBXNativeTarget "EnergyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3072C1822E84AA6C00ADBDAD /* Debug */,
+				3072C1832E84AA6C00ADBDAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

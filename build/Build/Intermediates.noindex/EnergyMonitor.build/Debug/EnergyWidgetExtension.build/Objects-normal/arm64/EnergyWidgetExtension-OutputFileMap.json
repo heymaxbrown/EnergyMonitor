@@ -1,0 +1,109 @@
+{
+  "" : {
+    "diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetExtension-primary.dia",
+    "emit-module-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetExtension-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetExtension-primary-emit-module.dia",
+    "pch" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetExtension-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetExtension-primary.swiftdeps"
+  },
+  "/Users/maxbrown/Documents/EnergyMonitor/EnergyWidget/AppIntent.swift" : {
+    "const-values" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppIntent.swiftconstvalues",
+    "dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppIntent.d",
+    "diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppIntent.dia",
+    "index-unit-output-path" : "/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppIntent.o",
+    "llvm-bc" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppIntent.bc",
+    "object" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppIntent.o",
+    "swift-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppIntent.swiftdeps",
+    "swiftmodule" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppIntent~partial.swiftmodule"
+  },
+  "/Users/maxbrown/Documents/EnergyMonitor/EnergyWidget/EnergyWidget.swift" : {
+    "const-values" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidget.swiftconstvalues",
+    "dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidget.d",
+    "diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidget.dia",
+    "index-unit-output-path" : "/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidget.o",
+    "llvm-bc" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidget.bc",
+    "object" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidget.o",
+    "swift-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidget.swiftdeps",
+    "swiftmodule" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidget~partial.swiftmodule"
+  },
+  "/Users/maxbrown/Documents/EnergyMonitor/EnergyWidget/EnergyWidgetBundle.swift" : {
+    "const-values" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetBundle.swiftconstvalues",
+    "dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetBundle.d",
+    "diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetBundle.dia",
+    "index-unit-output-path" : "/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetBundle.o",
+    "llvm-bc" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetBundle.bc",
+    "object" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetBundle.o",
+    "swift-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetBundle.swiftdeps",
+    "swiftmodule" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetBundle~partial.swiftmodule"
+  },
+  "/Users/maxbrown/Documents/EnergyMonitor/EnergyWidget/EnergyWidgetControl.swift" : {
+    "const-values" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetControl.swiftconstvalues",
+    "dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetControl.d",
+    "diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetControl.dia",
+    "index-unit-output-path" : "/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetControl.o",
+    "llvm-bc" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetControl.bc",
+    "object" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetControl.o",
+    "swift-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetControl.swiftdeps",
+    "swiftmodule" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetControl~partial.swiftmodule"
+  },
+  "/Users/maxbrown/Documents/EnergyMonitor/EnergyWidget/EnergyWidgetLiveActivity.swift" : {
+    "const-values" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetLiveActivity.swiftconstvalues",
+    "dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetLiveActivity.d",
+    "diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetLiveActivity.dia",
+    "index-unit-output-path" : "/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetLiveActivity.o",
+    "llvm-bc" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetLiveActivity.bc",
+    "object" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetLiveActivity.o",
+    "swift-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetLiveActivity.swiftdeps",
+    "swiftmodule" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/EnergyWidgetLiveActivity~partial.swiftmodule"
+  },
+  "/Users/maxbrown/Documents/EnergyMonitor/Shared/AppGroup.swift" : {
+    "const-values" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppGroup.swiftconstvalues",
+    "dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppGroup.d",
+    "diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppGroup.dia",
+    "index-unit-output-path" : "/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppGroup.o",
+    "llvm-bc" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppGroup.bc",
+    "object" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppGroup.o",
+    "swift-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppGroup.swiftdeps",
+    "swiftmodule" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/AppGroup~partial.swiftmodule"
+  },
+  "/Users/maxbrown/Documents/EnergyMonitor/Shared/Formatting.swift" : {
+    "const-values" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Formatting.swiftconstvalues",
+    "dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Formatting.d",
+    "diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Formatting.dia",
+    "index-unit-output-path" : "/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Formatting.o",
+    "llvm-bc" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Formatting.bc",
+    "object" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Formatting.o",
+    "swift-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Formatting.swiftdeps",
+    "swiftmodule" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Formatting~partial.swiftmodule"
+  },
+  "/Users/maxbrown/Documents/EnergyMonitor/Shared/Models.swift" : {
+    "const-values" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Models.swiftconstvalues",
+    "dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Models.d",
+    "diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Models.dia",
+    "index-unit-output-path" : "/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Models.o",
+    "llvm-bc" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Models.bc",
+    "object" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Models.o",
+    "swift-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Models.swiftdeps",
+    "swiftmodule" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/Models~partial.swiftmodule"
+  },
+  "/Users/maxbrown/Documents/EnergyMonitor/Shared/PowerCache.swift" : {
+    "const-values" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/PowerCache.swiftconstvalues",
+    "dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/PowerCache.d",
+    "diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/PowerCache.dia",
+    "index-unit-output-path" : "/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/PowerCache.o",
+    "llvm-bc" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/PowerCache.bc",
+    "object" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/PowerCache.o",
+    "swift-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/PowerCache.swiftdeps",
+    "swiftmodule" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/PowerCache~partial.swiftmodule"
+  },
+  "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/maxbrown/Documents/EnergyMonitor/build/Build/Intermediates.noindex/EnergyMonitor.build/Debug/EnergyWidgetExtension.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

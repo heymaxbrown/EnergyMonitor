@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>11</integer>
+	<key>logs</key>
+	<dict>
+		<key>3EB43FDF-AD20-49E0-A567-23D554148958</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3EB43FDF-AD20-49E0-A567-23D554148958.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>EnergyMonitor project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>EnergyMonitor</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project EnergyMonitor with scheme EnergyMonitor and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>780450722.64727998</real>
+			<key>timeStoppedRecording</key>
+			<real>780450725.503986</real>
+			<key>title</key>
+			<string>Building project EnergyMonitor with scheme EnergyMonitor and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>3EB43FDF-AD20-49E0-A567-23D554148958</string>
+		</dict>
+		<key>9B4B28A7-C77F-4CAE-B6A9-9BD4FD6DBAF4</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9B4B28A7-C77F-4CAE-B6A9-9BD4FD6DBAF4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>EnergyMonitor project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>EnergyMonitor</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project EnergyMonitor with scheme EnergyMonitor and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>780450162.245731</real>
+			<key>timeStoppedRecording</key>
+			<real>780450164.82432902</real>
+			<key>title</key>
+			<string>Building project EnergyMonitor with scheme EnergyMonitor and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>9B4B28A7-C77F-4CAE-B6A9-9BD4FD6DBAF4</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

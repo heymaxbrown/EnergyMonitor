@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'EnergyMonitor' in project 'EnergyMonitor'
+➜ Explicit dependency on target 'EnergyWidgetExtension' in project 'EnergyMonitor'
+Target 'EnergyWidgetExtension' in project 'EnergyMonitor' (no dependencies)
